@@ -50,11 +50,37 @@ li:hover {
   background-color: var(--hover-color);
 }
 
+h2 {
+  color: var(--secondary-text-color);
+  margin-top: 0;
+}
+
+h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
 #place-details {
   background-color: var(--cards);
   padding: 20px;
   border-radius: 5px;
   width: 70%;
+}
+
+#details-location , #details-landmarks, #details-images, #details-time, #details-notes {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.images-section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
