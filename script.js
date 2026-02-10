@@ -31,6 +31,7 @@ myTrip.addPlace(new place("Florida", "Disney World", "April 2017", "Looking forw
 myTrip.addPlace(new place("Johannesburg", "Red bus tour", "November 2024", "Looking forward to exploring the city!"));
 myTrip.addPlace(new place("Kuala Lumpur", "Petronas Towers", "April 2025", "Can't wait to see the tallest twin towers in the world!"));
 
+
 const placesList = document.getElementById("places-list");
 myTrip.places.forEach(place => {
   const listItem = document.createElement("li");
