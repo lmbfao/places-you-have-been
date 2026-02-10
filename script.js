@@ -28,35 +28,27 @@ Trip.prototype.addPlace = function(place) {
 const myTrip = new Trip();
 
 myTrip.addPlace(new Place(
-  "Dubai",
-  ["Burj Khalifa"],
-  // ["dubai.jpg"],
-  "December 2016",
-  " Can't wait to see the tallest building in the world!",
-));
-
-myTrip.addPlace(new Place(
-  "Florida",
-  ["Disney World"],
-  // ["florida.jpg"],
-  "April 2017",
-  "Looking forward to the rides!"
-));
-
-myTrip.addPlace(new Place(
-  "Johannesburg",
-  ["Red bus tour"],
-  // ["johannesburg.jpg"], 
-  "November 2024",
-  "Looking forward to exploring the city!"
-));
-
-myTrip.addPlace(new Place(
-  "Kuala Lumpur",
+  "Kuala Lumpur, Malaysia",
   ["Petronas Towers"],
-  // ["kuala-lumpur.jpg"],
+  ["images/petronas1.jpeg", "images/petronas2.jpeg" , "images/petronas3.jpeg", "images/petronas4.jpeg"],
   "April 2025",
-  "Can't wait to see the tallest twin towers in the world!"
+  "The tallest twin towers in the world!"
+));
+
+myTrip.addPlace(new Place(
+  "Johannesburg, South Africa",
+  ["Day bus tour plus tour to Soweto"],
+  ["images/SA1.jpeg", "images/SA2.jpeg", "images/SA3.jpeg", "images/SA4.jpeg"],
+  "November 2024",
+  "Exploring the city!"
+));
+
+myTrip.addPlace(new Place(
+  "Dubai, UAE",
+  ["Burj Khalifa"],
+  ["images/BK1.jpeg", "images/BK2.jpeg", "images/BK3.jpeg"],
+  "December 2016",
+  " The tallest building in the world!",
 ));
 
 //DOM MANIPULATION
