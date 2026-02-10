@@ -1,4 +1,4 @@
-function Place (location, landmarks, time, notes) {
+function Place (location, landmarks, images, time, notes) {
   this.location = location;
   this.landmarks = landmarks;
   this.images = images;
@@ -24,46 +24,50 @@ Trip.prototype.addPlace = function(place) {
   this.places.push(place);
 }
 
-//UI LOGIC
-
+//UI
 const myTrip = new Trip();
 
-myTrip.addPlace(new Place("Dubai",
+myTrip.addPlace(new Place(
+  "Dubai",
   ["Burj Khalifa"],
   // ["dubai.jpg"],
   "December 2016",
   " Can't wait to see the tallest building in the world!",
 ));
 
-myTrip.addPlace(new Place("Florida",
+myTrip.addPlace(new Place(
+  "Florida",
   ["Disney World"],
   // ["florida.jpg"],
   "April 2017",
   "Looking forward to the rides!"
 ));
 
-myTrip.addPlace(new Place("Johannesburg",
+myTrip.addPlace(new Place(
+  "Johannesburg",
   ["Red bus tour"],
   // ["johannesburg.jpg"], 
   "November 2024",
   "Looking forward to exploring the city!"
 ));
 
-myTrip.addPlace(new Place("Kuala Lumpur",
+myTrip.addPlace(new Place(
+  "Kuala Lumpur",
   ["Petronas Towers"],
   // ["kuala-lumpur.jpg"],
   "April 2025",
   "Can't wait to see the tallest twin towers in the world!"
 ));
 
+//DOM MANIPULATION
 const placesList = document.getElementById("places-list");
-
 const detailsSection = document.getElementById("details-location");
 const detailsLandmarks = document.getElementById("details-landmarks");
 const detailsImages = document.getElementById("details-images");
 const detailsTime = document.getElementById("details-time");
 const detailsNotes = document.getElementById("details-notes");
 
+//LIST
 myTrip.places.forEach(place => {
   const listItem = document.createElement("li");
   listItem.textContent = place.location; 
