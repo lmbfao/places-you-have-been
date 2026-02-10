@@ -30,9 +30,9 @@ The colour scheme is soft pink and green.
 
 2. Navigate to the project folder:
 
-   ```bash
+  ```bash
   cd places-youve-been
-   ```
+  ```
 
 3. Open "[index.html](index.html)" in your browser.
 
