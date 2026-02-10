@@ -8,24 +8,25 @@
   --hover-color: #e0c1d1; /*pale pink */
   --cards: #ffffff; /*white */
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-};
+}
 
 
 body {
-  background-color: #f9f3f6;
-  color: #4a4a4a;
+  background-color: var(--secondary-color);
+  font-family: var(--font-family);
+  color: var(--main-text-color);
   margin: 0;
   padding: 35px;
 }
 
 h1 {
   text-align: center;
-  color: #8b5d6c;
+  color: var(--primary-color);
   margin-bottom: 35px;
   font-weight: 500;
 }
 
-.container {
+#places-container {
   display: flex;
   gap: 20px;
 }
@@ -37,7 +38,7 @@ ul {
 }
 
 li {
-  background-color: #fff;
+  background-color: var(--cards);
   margin-bottom: 10px;
   padding: 15px;
   border-radius: 5px;
@@ -46,20 +47,18 @@ li {
 }
 
 li:hover {
-  background-color: #e0c1d1;
+  background-color: var(--hover-color);
 }
 
 #place-details {
-  background-color: #fff;
+  background-color: var(--cards);
   padding: 20px;
   border-radius: 5px;
   width: 70%;
 }
 
-
-
 @media (max-width: 768px) {
-  .container {
+  #places-container {
     flex-direction: column;
   }
 
