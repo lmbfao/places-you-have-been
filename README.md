@@ -25,7 +25,7 @@ The colour scheme is soft pink and green.
 1. Clone the repository to your local machine:
 
   ```bash
-  git clone https://github.com/lmbfao/places-you-have-been.git
+  git clone https://github.com/ckwangechi/places-you-have-been.git
   ```
 
 2. Navigate to the project folder:
@@ -44,7 +44,7 @@ The colour scheme is soft pink and green.
 
 You can view the live site on GitHub Pages:  
 
-[Places You've Been Live](https://lmbfao.github.io/places-you-have-been/)
+[Places You've Been Live](https://ckwangechi.github.io/places-you-have-been/)
 
 ---
 
